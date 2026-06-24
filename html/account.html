@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Account — Heritage Lux</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="nav">
+    <div class="container nav-row">
+      <a href="index.html" class="nav-logo">Heritage Lux</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="browse.html" class="nav-link">Cultures</a>
+        <a href="browse.html" class="nav-link">New Arrivals</a>
+        <a href="index.html" class="nav-link">Concierge</a>
+      </nav>
+      <div class="nav-search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" placeholder="Search heritage…" aria-label="Search heritage pieces">
+      </div>
+      <div class="nav-actions">
+        <a href="account.html" aria-label="Wishlist" class="nav-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </a>
+        <a href="account.html" aria-label="Bag" class="nav-icon" style="position: relative;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="nav-cart-count" style="display:none; position:absolute; top:-6px; right:-8px; background:var(--oxblood); color:#fff; width:16px; height:16px; border-radius:50%; font-size:0.6rem; align-items:center; justify-content:center;">0</span>
+        </a>
+        <a href="account.html" aria-label="Account" class="nav-icon" style="color: var(--gold);">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+        </a>
+        <a href="browse.html" class="btn btn-primary nav-cta">Rent Now</a>
+      </div>
+      <button class="nav-burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="nav-mobile">
+      <a href="browse.html">Cultures</a>
+      <a href="browse.html">New Arrivals</a>
+      <a href="account.html">Account</a>
+      <a href="browse.html" class="btn btn-primary">Rent Now</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container account-layout">
+      <!-- SIDEBAR -->
+      <aside class="account-sidebar">
+        <nav class="sidebar-tabs" aria-label="Account sections">
+          <button class="sidebar-tab active" data-tab="profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+            Profile
+          </button>
+          <button class="sidebar-tab" data-tab="rentals">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4zM3 6h18M16 10a4 4 0 0 1-8 0"/></svg>
+            Rentals
+          </button>
+          <button class="sidebar-tab" data-tab="payments">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M2 7h20M2 7v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7M2 7l2-3h16l2 3"/></svg>
+            Payments
+          </button>
+          <button class="sidebar-tab" data-tab="settings">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="3"/><path d="M19.4 13a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1.03 1.55V19a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 9 17.36a1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.64 13"/></svg>
+            Settings
+          </button>
+        </nav>
+
+        <div class="notifications-card">
+          <p class="notif-title">Notifications</p>
+          <div class="notif-item">
+            <strong>Status Update</strong>
+            <p>Your Kimono return was verified.</p>
+          </div>
+          <div class="notif-item">
+            <strong>New Arrival</strong>
+            <p>Rare Hanbok collection just landed.</p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- MAIN -->
+      <section class="account-main">
+        <div class="profile-card">
+          <div class="profile-id">
+            <img src="https://images.pexels.com/photos/33968169/pexels-photo-33968169.jpeg?auto=compress&cs=tinysrgb&w=200" alt="" class="avatar">
+            <div>
+              <h1 id="account-name"></h1>
+              <p class="member-since" id="account-since"></p>
+            </div>
+            <span class="tier-badge" id="account-tier"></span>
+          </div>
+          <div class="points-card">
+            <p class="points-label">Heritage Points</p>
+            <p class="points-value" id="account-points"></p>
+            <p class="points-next" id="account-points-next"></p>
+          </div>
+        </div>
+
+        <div class="section-head" style="margin-top: 48px; margin-bottom: 24px;">
+          <h2>Active Rentals</h2>
+          <a href="#" class="text-link">View Logistics →</a>
+        </div>
+        <div class="rentals-grid" id="rentals-grid"></div>
+
+        <div class="bottom-grid">
+          <div class="history-card">
+            <div class="section-head" style="margin-bottom: 20px;">
+              <h2>History</h2>
+              <button aria-label="Filter history" class="filter-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 3H2l8 9.46V19l4 2v-8.54z"/></svg>
+              </button>
+            </div>
+            <div id="history-list"></div>
+          </div>
+
+          <div class="wishlist-card">
+            <p class="wishlist-title">♥ Wishlist</p>
+            <div class="wishlist-grid" id="wishlist-grid"></div>
+            <a href="browse.html" class="btn btn-gold btn-block" style="justify-content:center;">Explore Collections</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="thread"></div>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>Heritage Lux</h3>
+        <p>Connecting the world's most beautiful traditions with the modern fashion connoisseur.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Twitter">TW</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <p class="eyebrow on-dark">Collections</p>
+        <a href="browse.html">African Heritage</a>
+        <a href="browse.html">Asian Traditions</a>
+        <a href="browse.html">Middle Eastern Elegance</a>
+        <a href="index.html">Our Story</a>
+      </div>
+      <div class="footer-col">
+        <p class="eyebrow on-dark">Legal</p>
+        <a href="#">Rental Agreement</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Shipping &amp; Returns</a>
+      </div>
+      <div class="footer-col">
+        <p class="eyebrow on-dark">Follow</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Twitter">TW</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom"><p>© 2024 Heritage Lux. All rights reserved.</p></div>
+  </footer>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/account.js"></script>
+</body>
+</html>

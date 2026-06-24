@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cultural Exchanges — Heritage Lux</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="nav">
+    <div class="container nav-row">
+      <a href="index.html" class="nav-logo">Heritage Lux</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="browse.html" class="nav-link active">Cultures</a>
+        <a href="browse.html" class="nav-link">New Arrivals</a>
+        <a href="index.html" class="nav-link">Concierge</a>
+      </nav>
+      <div class="nav-search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" placeholder="Search heritage…" aria-label="Search heritage pieces">
+      </div>
+      <div class="nav-actions">
+        <a href="account.html" aria-label="Wishlist" class="nav-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </a>
+        <a href="account.html" aria-label="Bag" class="nav-icon" style="position: relative;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="nav-cart-count" style="display:none; position:absolute; top:-6px; right:-8px; background:var(--oxblood); color:#fff; width:16px; height:16px; border-radius:50%; font-size:0.6rem; align-items:center; justify-content:center;">0</span>
+        </a>
+        <a href="account.html" aria-label="Account" class="nav-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+        </a>
+        <a href="browse.html" class="btn btn-primary nav-cta">Rent Now</a>
+      </div>
+      <button class="nav-burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="nav-mobile">
+      <a href="browse.html">Cultures</a>
+      <a href="browse.html">New Arrivals</a>
+      <a href="account.html">Account</a>
+      <a href="browse.html" class="btn btn-primary">Rent Now</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container browse-head">
+      <p class="eyebrow">Explore Heritage</p>
+      <h1>Cultural Exchanges</h1>
+    </div>
+
+    <div class="container browse-layout">
+      <!-- FILTER SIDEBAR -->
+      <aside class="filters" aria-label="Filter garments">
+        <div class="filter-search">
+          <input type="text" id="search-input" placeholder="Search collection…" aria-label="Search collection">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+
+        <div class="filter-group">
+          <label for="culture-select">Culture</label>
+          <select id="culture-select">
+            <option value="All Traditions">All Traditions</option>
+            <option value="African">African</option>
+            <option value="Asian">Asian</option>
+            <option value="Middle Eastern">Middle Eastern</option>
+            <option value="South Asian">South Asian</option>
+            <option value="East Asian">East Asian</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <span>Gender</span>
+          <div class="radio-row">
+            <label><input type="radio" name="gender"> Women</label>
+            <label><input type="radio" name="gender"> Men</label>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <span>Size</span>
+          <div class="size-row" id="size-row">
+            <button type="button" class="size-pill" data-size="XS">XS</button>
+            <button type="button" class="size-pill active" data-size="S">S</button>
+            <button type="button" class="size-pill" data-size="M">M</button>
+            <button type="button" class="size-pill" data-size="L">L</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <span>Color Palette</span>
+          <div class="swatch-row">
+            <button type="button" class="swatch" style="background:#1A0E1F; border-color:#1A0E1F;" aria-label="Ink"></button>
+            <button type="button" class="swatch" style="background:#C9A227; border-color:#C9A227;" aria-label="Gold"></button>
+            <button type="button" class="swatch" style="background:#F7F2E9; border-color:#ddd;" aria-label="Parchment"></button>
+            <button type="button" class="swatch" style="background:#7C2D3E; border-color:#7C2D3E;" aria-label="Oxblood"></button>
+            <button type="button" class="swatch" style="background:#2F4538; border-color:#2F4538;" aria-label="Heritage Green"></button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <span>Price per Rental</span>
+          <input type="range" min="150" max="2500" value="800" class="price-slider" id="price-slider" aria-label="Price per rental">
+          <div class="price-labels"><span>$150</span><span>$2500+</span></div>
+        </div>
+
+        <div class="filter-group">
+          <label for="event-date">Event Date</label>
+          <input id="event-date" type="date">
+        </div>
+
+        <button class="btn btn-primary btn-block" id="apply-filters">Apply Filters</button>
+        <button class="clear-all" id="clear-filters">Clear All</button>
+      </aside>
+
+      <!-- RESULTS -->
+      <section class="results">
+        <div class="results-head">
+          <p id="results-count">0 pieces found</p>
+          <div class="sort-row">
+            <span>Sort by</span>
+            <select id="sort-select" aria-label="Sort by">
+              <option value="featured">Featured</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="newest">Newest</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="results-grid" id="results-grid"></div>
+
+        <div class="empty-state hidden" id="empty-state">
+          <p>No pieces match these filters yet.</p>
+          <button class="btn btn-secondary" id="empty-clear">Clear filters</button>
+        </div>
+
+        <div class="pagination" id="pagination" role="navigation" aria-label="Pagination"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="thread"></div>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>Heritage Lux</h3>
+        <p>Curating the world's most prestigious cultural apparel for a new era of global fashion.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Twitter">TW</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <p class="eyebrow on-dark">The Collection</p>
+        <a href="browse.html">African Heritage</a>
+        <a href="browse.html">Asian Traditions</a>
+        <a href="browse.html">Middle Eastern Elegance</a>
+      </div>
+      <div class="footer-col">
+        <p class="eyebrow on-dark">Company</p>
+        <a href="index.html">Our Story</a>
+        <a href="#">Rental Agreement</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="footer-col">
+        <p class="eyebrow on-dark">Join the Elite</p>
+        <p class="footer-news-copy">Exclusive access to rare heritage arrivals.</p>
+        <form class="footer-form" onsubmit="return false;">
+          <input type="email" placeholder="Email address" aria-label="Email address" required>
+          <button type="submit" aria-label="Subscribe">→</button>
+        </form>
+      </div>
+    </div>
+    <div class="container footer-bottom"><p>© 2024 Heritage Lux. All rights reserved.</p></div>
+  </footer>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/browse.js"></script>
+</body>
+</html>
